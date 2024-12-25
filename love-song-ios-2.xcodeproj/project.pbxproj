@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3874BA8F2D1BB69A0045AEF6 /* love_song_ios_2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3874BA8E2D1BB69A0045AEF6 /* love_song_ios_2App.swift */; };
+		3874BA912D1BB69A0045AEF6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3874BA902D1BB69A0045AEF6 /* ContentView.swift */; };
+		3874BA932D1BB69B0045AEF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3874BA922D1BB69B0045AEF6 /* Assets.xcassets */; };
+		3874BA962D1BB69B0045AEF6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3874BA952D1BB69B0045AEF6 /* Preview Assets.xcassets */; };
+		3874BAA02D1BB69B0045AEF6 /* love_song_ios_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3874BA9F2D1BB69B0045AEF6 /* love_song_ios_2Tests.swift */; };
+		3874BAAA2D1BB69B0045AEF6 /* love_song_ios_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3874BAA92D1BB69B0045AEF6 /* love_song_ios_2UITests.swift */; };
+		3874BAAC2D1BB69B0045AEF6 /* love_song_ios_2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3874BAAB2D1BB69B0045AEF6 /* love_song_ios_2UITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3874BA9C2D1BB69B0045AEF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3874BA832D1BB69A0045AEF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3874BA8A2D1BB69A0045AEF6;
+			remoteInfo = "love-song-ios-2";
+		};
+		3874BAA62D1BB69B0045AEF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3874BA832D1BB69A0045AEF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3874BA8A2D1BB69A0045AEF6;
+			remoteInfo = "love-song-ios-2";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3874BA8B2D1BB69A0045AEF6 /* love-song-ios-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "love-song-ios-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3874BA8E2D1BB69A0045AEF6 /* love_song_ios_2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = love_song_ios_2App.swift; sourceTree = "<group>"; };
+		3874BA902D1BB69A0045AEF6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3874BA922D1BB69B0045AEF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3874BA952D1BB69B0045AEF6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3874BA9B2D1BB69B0045AEF6 /* love-song-ios-2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "love-song-ios-2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3874BA9F2D1BB69B0045AEF6 /* love_song_ios_2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = love_song_ios_2Tests.swift; sourceTree = "<group>"; };
+		3874BAA52D1BB69B0045AEF6 /* love-song-ios-2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "love-song-ios-2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3874BAA92D1BB69B0045AEF6 /* love_song_ios_2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = love_song_ios_2UITests.swift; sourceTree = "<group>"; };
+		3874BAAB2D1BB69B0045AEF6 /* love_song_ios_2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = love_song_ios_2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3874BA882D1BB69A0045AEF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3874BA982D1BB69B0045AEF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3874BAA22D1BB69B0045AEF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3874BA822D1BB69A0045AEF6 = {
+			isa = PBXGroup;
+			children = (
+				3874BA8D2D1BB69A0045AEF6 /* love-song-ios-2 */,
+				3874BA9E2D1BB69B0045AEF6 /* love-song-ios-2Tests */,
+				3874BAA82D1BB69B0045AEF6 /* love-song-ios-2UITests */,
+				3874BA8C2D1BB69A0045AEF6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3874BA8C2D1BB69A0045AEF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3874BA8B2D1BB69A0045AEF6 /* love-song-ios-2.app */,
+				3874BA9B2D1BB69B0045AEF6 /* love-song-ios-2Tests.xctest */,
+				3874BAA52D1BB69B0045AEF6 /* love-song-ios-2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3874BA8D2D1BB69A0045AEF6 /* love-song-ios-2 */ = {
+			isa = PBXGroup;
+			children = (
+				3874BA8E2D1BB69A0045AEF6 /* love_song_ios_2App.swift */,
+				3874BA902D1BB69A0045AEF6 /* ContentView.swift */,
+				3874BA922D1BB69B0045AEF6 /* Assets.xcassets */,
+				3874BA942D1BB69B0045AEF6 /* Preview Content */,
+			);
+			path = "love-song-ios-2";
+			sourceTree = "<group>";
+		};
+		3874BA942D1BB69B0045AEF6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3874BA952D1BB69B0045AEF6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3874BA9E2D1BB69B0045AEF6 /* love-song-ios-2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3874BA9F2D1BB69B0045AEF6 /* love_song_ios_2Tests.swift */,
+			);
+			path = "love-song-ios-2Tests";
+			sourceTree = "<group>";
+		};
+		3874BAA82D1BB69B0045AEF6 /* love-song-ios-2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				3874BAA92D1BB69B0045AEF6 /* love_song_ios_2UITests.swift */,
+				3874BAAB2D1BB69B0045AEF6 /* love_song_ios_2UITestsLaunchTests.swift */,
+			);
+			path = "love-song-ios-2UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3874BA8A2D1BB69A0045AEF6 /* love-song-ios-2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3874BAAF2D1BB69B0045AEF6 /* Build configuration list for PBXNativeTarget "love-song-ios-2" */;
+			buildPhases = (
+				3874BA872D1BB69A0045AEF6 /* Sources */,
+				3874BA882D1BB69A0045AEF6 /* Frameworks */,
+				3874BA892D1BB69A0045AEF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "love-song-ios-2";
+			productName = "love-song-ios-2";
+			productReference = 3874BA8B2D1BB69A0045AEF6 /* love-song-ios-2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3874BA9A2D1BB69B0045AEF6 /* love-song-ios-2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3874BAB22D1BB69B0045AEF6 /* Build configuration list for PBXNativeTarget "love-song-ios-2Tests" */;
+			buildPhases = (
+				3874BA972D1BB69B0045AEF6 /* Sources */,
+				3874BA982D1BB69B0045AEF6 /* Frameworks */,
+				3874BA992D1BB69B0045AEF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3874BA9D2D1BB69B0045AEF6 /* PBXTargetDependency */,
+			);
+			name = "love-song-ios-2Tests";
+			productName = "love-song-ios-2Tests";
+			productReference = 3874BA9B2D1BB69B0045AEF6 /* love-song-ios-2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3874BAA42D1BB69B0045AEF6 /* love-song-ios-2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3874BAB52D1BB69B0045AEF6 /* Build configuration list for PBXNativeTarget "love-song-ios-2UITests" */;
+			buildPhases = (
+				3874BAA12D1BB69B0045AEF6 /* Sources */,
+				3874BAA22D1BB69B0045AEF6 /* Frameworks */,
+				3874BAA32D1BB69B0045AEF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3874BAA72D1BB69B0045AEF6 /* PBXTargetDependency */,
+			);
+			name = "love-song-ios-2UITests";
+			productName = "love-song-ios-2UITests";
+			productReference = 3874BAA52D1BB69B0045AEF6 /* love-song-ios-2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3874BA832D1BB69A0045AEF6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3874BA8A2D1BB69A0045AEF6 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					3874BA9A2D1BB69B0045AEF6 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 3874BA8A2D1BB69A0045AEF6;
+					};
+					3874BAA42D1BB69B0045AEF6 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 3874BA8A2D1BB69A0045AEF6;
+					};
+				};
+			};
+			buildConfigurationList = 3874BA862D1BB69A0045AEF6 /* Build configuration list for PBXProject "love-song-ios-2" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3874BA822D1BB69A0045AEF6;
+			productRefGroup = 3874BA8C2D1BB69A0045AEF6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3874BA8A2D1BB69A0045AEF6 /* love-song-ios-2 */,
+				3874BA9A2D1BB69B0045AEF6 /* love-song-ios-2Tests */,
+				3874BAA42D1BB69B0045AEF6 /* love-song-ios-2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3874BA892D1BB69A0045AEF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3874BA962D1BB69B0045AEF6 /* Preview Assets.xcassets in Resources */,
+				3874BA932D1BB69B0045AEF6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3874BA992D1BB69B0045AEF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3874BAA32D1BB69B0045AEF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3874BA872D1BB69A0045AEF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3874BA912D1BB69A0045AEF6 /* ContentView.swift in Sources */,
+				3874BA8F2D1BB69A0045AEF6 /* love_song_ios_2App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3874BA972D1BB69B0045AEF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3874BAA02D1BB69B0045AEF6 /* love_song_ios_2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3874BAA12D1BB69B0045AEF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3874BAAC2D1BB69B0045AEF6 /* love_song_ios_2UITestsLaunchTests.swift in Sources */,
+				3874BAAA2D1BB69B0045AEF6 /* love_song_ios_2UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3874BA9D2D1BB69B0045AEF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3874BA8A2D1BB69A0045AEF6 /* love-song-ios-2 */;
+			targetProxy = 3874BA9C2D1BB69B0045AEF6 /* PBXContainerItemProxy */;
+		};
+		3874BAA72D1BB69B0045AEF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3874BA8A2D1BB69A0045AEF6 /* love-song-ios-2 */;
+			targetProxy = 3874BAA62D1BB69B0045AEF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3874BAAD2D1BB69B0045AEF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3874BAAE2D1BB69B0045AEF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3874BAB02D1BB69B0045AEF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"love-song-ios-2/Preview Content\"";
+				DEVELOPMENT_TEAM = N95V686XJ5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thinkmagic.love-song-ios-2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3874BAB12D1BB69B0045AEF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"love-song-ios-2/Preview Content\"";
+				DEVELOPMENT_TEAM = N95V686XJ5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thinkmagic.love-song-ios-2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3874BAB32D1BB69B0045AEF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N95V686XJ5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thinkmagic.love-song-ios-2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/love-song-ios-2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/love-song-ios-2";
+			};
+			name = Debug;
+		};
+		3874BAB42D1BB69B0045AEF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N95V686XJ5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thinkmagic.love-song-ios-2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/love-song-ios-2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/love-song-ios-2";
+			};
+			name = Release;
+		};
+		3874BAB62D1BB69B0045AEF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N95V686XJ5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thinkmagic.love-song-ios-2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "love-song-ios-2";
+			};
+			name = Debug;
+		};
+		3874BAB72D1BB69B0045AEF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N95V686XJ5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thinkmagic.love-song-ios-2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "love-song-ios-2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3874BA862D1BB69A0045AEF6 /* Build configuration list for PBXProject "love-song-ios-2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3874BAAD2D1BB69B0045AEF6 /* Debug */,
+				3874BAAE2D1BB69B0045AEF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3874BAAF2D1BB69B0045AEF6 /* Build configuration list for PBXNativeTarget "love-song-ios-2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3874BAB02D1BB69B0045AEF6 /* Debug */,
+				3874BAB12D1BB69B0045AEF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3874BAB22D1BB69B0045AEF6 /* Build configuration list for PBXNativeTarget "love-song-ios-2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3874BAB32D1BB69B0045AEF6 /* Debug */,
+				3874BAB42D1BB69B0045AEF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3874BAB52D1BB69B0045AEF6 /* Build configuration list for PBXNativeTarget "love-song-ios-2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3874BAB62D1BB69B0045AEF6 /* Debug */,
+				3874BAB72D1BB69B0045AEF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3874BA832D1BB69A0045AEF6 /* Project object */;
+}
