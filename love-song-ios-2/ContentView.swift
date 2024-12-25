@@ -19,43 +19,48 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
+            // 背景色
             Color(red: 255/255, green: 192/255, blue: 203/255)
                 .ignoresSafeArea()
             
-            Button(action: {
-                playClickSound()
-                withAnimation(.easeOut(duration: 0.2)) {
-                    buttonScale = 0.8
-                    buttonOpacity = 0
-                }
-                
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-                    videoScale = 0.3
-                    isVideoPlaying = true
-                    withAnimation(.spring(response: 0.6, dampingFraction: 0.8)) {
-                        videoScale = 1.0
+            if !isVideoPlaying {
+                // 播放按钮
+                Button(action: {
+                    playClickSound()
+                    withAnimation(.easeOut(duration: 0.2)) {
+                        buttonScale = 0.8
+                        buttonOpacity = 0
                     }
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
-                        videoLoader.player.play()
+                    
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                        videoScale = 0.3
+                        isVideoPlaying = true
+                        withAnimation(.spring(response: 0.6, dampingFraction: 0.8)) {
+                            videoScale = 1.0
+                        }
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
+                            videoLoader.resetToStart()
+                            videoLoader.player.play()
+                        }
                     }
+                }) {
+                    HStack(spacing: 12) {
+                        Image(systemName: "play.fill")
+                            .font(.system(size: 24))
+                        Text("love song")
+                            .font(.system(size: 20, weight: .medium))
+                    }
+                    .foregroundColor(.black)
+                    .frame(width: 160, height: 56)
+                    .background(
+                        RoundedRectangle(cornerRadius: 28)
+                            .fill(.white)
+                            .shadow(color: .black.opacity(0.1), radius: 10, x: 0, y: 4)
+                    )
                 }
-            }) {
-                HStack(spacing: 12) {
-                    Image(systemName: "play.fill")
-                        .font(.system(size: 24))
-                    Text("love song")
-                        .font(.system(size: 20, weight: .medium))
-                }
-                .foregroundColor(.black)
-                .frame(width: 160, height: 56)
-                .background(
-                    RoundedRectangle(cornerRadius: 28)
-                        .fill(.white)
-                        .shadow(color: .black.opacity(0.1), radius: 10, x: 0, y: 4)
-                )
+                .scaleEffect(buttonScale)
+                .opacity(buttonOpacity)
             }
-            .scaleEffect(buttonScale)
-            .opacity(buttonOpacity)
             
             if isVideoPlaying {
                 ZStack {
@@ -117,7 +122,7 @@ struct ContentView: View {
             let player = try AVAudioPlayer(contentsOf: soundURL)
             player.play()
         } catch {
-            print("无法播放效：\(error.localizedDescription)")
+            print("无法播放音效：\(error.localizedDescription)")
         }
     }
 }
@@ -131,8 +136,11 @@ struct CustomVideoPlayer: UIViewControllerRepresentable {
         controller.player = player
         controller.showsPlaybackControls = false
         controller.videoGravity = .resizeAspect
-        
         controller.view.backgroundColor = .clear
+        
+        // 优化播放器配置
+        controller.entersFullScreenWhenPlaybackBegins = false
+        controller.exitsFullScreenWhenPlaybackEnds = false
         
         NotificationCenter.default.addObserver(
             forName: .AVPlayerItemDidPlayToEndTime,
@@ -140,7 +148,7 @@ struct CustomVideoPlayer: UIViewControllerRepresentable {
             queue: .main
         ) { _ in
             isPaused = true
-            player.seek(to: .zero)
+            player.seek(to: .zero, toleranceBefore: .zero, toleranceAfter: .zero)
         }
         
         return controller
@@ -157,7 +165,7 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-// 视频加载和缓存管理器
+// 频加载和缓存管理器
 class VideoLoader: NSObject, ObservableObject, AVAssetResourceLoaderDelegate {
     let player: AVPlayer
     private let videoURL = URL(string: "https://think-magic-bucket-1.oss-cn-hangzhou.aliyuncs.com/test_video_12_24.mp4")!
@@ -167,30 +175,62 @@ class VideoLoader: NSObject, ObservableObject, AVAssetResourceLoaderDelegate {
         // 创建带缓存的 AVPlayer
         let asset = AVURLAsset(url: videoURL)
         let playerItem = AVPlayerItem(asset: asset)
+        
+        // 配置播放项
+        playerItem.preferredForwardBufferDuration = 5  // 预缓冲5秒
+        playerItem.automaticallyPreservesTimeOffsetFromLive = false
+        
         self.player = AVPlayer(playerItem: playerItem)
+        player.automaticallyWaitsToMinimizeStalling = true
         
         super.init()
         
-        // 配置缓存
-        let request = URLRequest(url: videoURL)
-        let session = URLSession.shared
-        
-        // 检查缓存
-        if cache.cachedResponse(for: request) == nil {
-            // 如果没有缓存，下载视频
-            session.dataTask(with: request) { [weak self] data, response, error in
-                guard let self = self,
-                      let data = data,
-                      let response = response else { return }
+        // 使用新的 API 加载视频资源
+        Task {
+            do {
+                // 等待资源加载完成并存储结果
+                let isPlayable = try await asset.load(.isPlayable)
+                guard isPlayable else {
+                    print("Asset is not playable")
+                    return
+                }
                 
-                // 保存到缓存
-                let cachedResponse = CachedURLResponse(response: response, data: data)
-                self.cache.storeCachedResponse(cachedResponse, for: request)
-            }.resume()
+                // 在主线程上配置缓存
+                await MainActor.run {
+                    let request = URLRequest(url: videoURL,
+                                          cachePolicy: .returnCacheDataElseLoad,
+                                          timeoutInterval: 30)
+                    
+                    if self.cache.cachedResponse(for: request) == nil {
+                        // 创建带缓存配置的URLSession
+                        let config = URLSessionConfiguration.default
+                        config.requestCachePolicy = .returnCacheDataElseLoad
+                        let session = URLSession(configuration: config)
+                        
+                        session.dataTask(with: request) { [weak self] data, response, error in
+                            guard let data = data,
+                                  let response = response else { return }
+                            
+                            let cachedResponse = CachedURLResponse(
+                                response: response,
+                                data: data,
+                                userInfo: nil,
+                                storagePolicy: .allowed
+                            )
+                            self?.cache.storeCachedResponse(cachedResponse, for: request)
+                        }.resume()
+                    }
+                }
+            } catch {
+                print("Failed to load asset: \(error.localizedDescription)")
+            }
         }
         
-        // 配置 AVAssetResourceLoader
         asset.resourceLoader.setDelegate(self, queue: .main)
+    }
+    
+    func resetToStart() {
+        player.seek(to: .zero, toleranceBefore: .zero, toleranceAfter: .zero)
     }
     
     func resourceLoader(_ resourceLoader: AVAssetResourceLoader,
